@@ -2,10 +2,10 @@ import {createCss} from '@stitches/core';
 import type {TMedias, TTheme} from '@stitches/core';
 
 const media: TMedias = {
-	initial: '(min-width: 0)',
-	sm: '(min-width: 30em)',
-	md: '(min-width: 48em)',
-	lg: '(min-width: 62em)',
+	'initial': '',
+	'sm': '(min-width: 640px)',
+	'md': '(min-width: 768px)',
+	'lg': '(min-width: 1024px)',
 }
 
 const theme: TTheme = {

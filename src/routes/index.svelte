@@ -1,13 +1,11 @@
 <script>
-	import Box from '$lib/Box.svelte'
+  import Box from '$lib/Box.svelte';
+  import styled from '$lib/styled';
 
-	let bgColor = '$primary'
+  let bgColor = '$primary';
 </script>
 
-<label for="choose-bg">{bgColor}</label>
+<label for="choose-bg" use:styled={{ color: { '@initial': 'red', '@md': 'blue' } }}>{bgColor}</label>
 <input id="choose-bg" type="color" bind:value={bgColor} />
 
-<Box
-	bg={bgColor}
-	boxSize='100px'
-/>
+<Box bg={bgColor} boxSize="100px" />
