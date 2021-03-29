@@ -34,8 +34,8 @@ const {css} = createCss<Media, Theme, Utils>({
 	utils,
 })
 
-function styled(node, initialInput) {
-  function update(input) {
+function styled(node: Element, initialInput: any) {
+  function update(input: any) {
 		const {className} = css(input)()
 
     node.classList.add(className);
